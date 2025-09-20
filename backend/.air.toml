@@ -1,0 +1,20 @@
+# Basic Air configuration for Go live reload
+
+[build]
+cmd = "go build -o fibra-ctrl ./cmd/main.go"
+bin = "fibra-ctrl"
+include_ext = ["go", "tpl", "tmpl", "html"]
+exclude_dir = ["vendor", "node_modules"]
+delay = 1000 # ms
+
+[color]
+main = "yellow"
+watcher = "cyan"
+build = "green"
+runner = "magenta"
+
+[log]
+time = true
+
+[debug]
+enable = true
